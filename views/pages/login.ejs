@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Traveler</title>
+  <style>
+    body {
+      background-color : #C8DAF2;
+    }
+    #login_img {
+      display : block;
+      margin-left : auto;
+      margin-right : auto;
+      margin-top : 100px;
+      width : 300px;
+      height : 130px;
+    }
+    #login_form {
+      padding-top :50px;
+      margin-left : auto;
+      margin-right : auto;
+      width :300px;
+      text-align : center;
+    }
+    #login_table {
+      padding-top : 50px;
+      padding-bottom : 50px;
+    }
+    fieldset {
+      border-radius : 20px;
+      background-color : aquamarine;
+    }
+  </style>
+</head>
+
+<body>
+<div id="login_title">
+  <img id="login_img" src="Q3_map.jpg" alt="" onclick="location.href='indedx.html'">
+</div>
+<div id="login_form">
+  <form action="/loginAction" method="post">
+    <fieldset>
+      <legend>로그인</legend>
+      <table id="login_table">
+        <tr>
+          <td>아이디 : </td>
+          <td><input type="text" name="user_id"></td>
+        </tr>
+        <tr>
+          <td>비밀번호 : </td>
+          <td><input type="password" name="user_pw"></td>
+        </tr>
+        <!-- <tr>
+            <td colspan="2">잘못된 정보입니다.</td>
+        </tr> -->
+      </table>
+      <input type = "submit" value="로그인"/>
+    </fieldset>
+  </form>
+</div>
+
+</body>
+</html>

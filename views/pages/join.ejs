@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Traveler</title>
+  <style>
+    body {
+      background-color : #C8DAF2;
+    }
+    #login_img {
+      display : block;
+      margin-left : auto;
+      margin-right : auto;
+      margin-top : 100px;
+      width : 300px;
+      height : 130px;
+    }
+    #login_form {
+      padding-top : 50px;
+      margin-left : auto;
+      margin-right : auto;
+      width :300px;
+      text-align : center;
+    }
+    #login_table {
+      padding-top : 50px;
+      padding-bottom : 50px;
+    }
+    fieldset {
+      border-radius : 20px;
+      background-color : aquamarine;
+    }
+  </style>
+</head>
+
+<body>
+<div id="login_title">
+  <img id="login_img" src="Q3_map.jpg" alt="로고" onclick="location.href='indedx.html'">
+</div>
+<div id="login_form">
+  <form action="/users", method="post">
+    <fieldset>
+      <legend>회원가입</legend>
+      <table id="login_table">
+          <tr>
+              <td>이름 : </td>
+              <td><input type="text" name="name"></td>
+          </tr>
+          <tr>
+              <td>성별 : </td>
+              <td>
+                <input type="radio" name="gender" value="m">남자
+                <input type="radio" name="gender" value="w">여자
+              </td>
+          </tr>
+          <tr>
+              <td>전화번호 : </td>
+              <td><input type="text" name="number"></td>
+          </tr>
+        <tr>
+          <td>아이디 : </td>
+          <td><input type="text" name="userId"></td>
+        </tr>
+        <tr>
+          <td>비밀번호 : </td>
+          <td><input type="password" name="userPw"></td>
+        </tr>
+      </table>
+      <input type = "submit" value="회원가입"/>
+    </fieldset>
+  </form>
+</div>
+
+</body>
+</html>
